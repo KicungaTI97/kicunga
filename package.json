@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js ",
-    "build": "tsup src/server.ts --format cjs,esm --dts --out-dir dist --clean",
+    "build": "tsup src --out-dir build",
     "start": "node ./dist/server.js",
     "test": "vitest"
   },
